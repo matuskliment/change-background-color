@@ -46,9 +46,7 @@ buttonChangeColor.addEventListener('click', (e) => {
             let firstRandom = randomRGBToHex(random256(), random256(), random256());
             buttonChangeColor.style.backgroundColor = firstRandom;
             newParagraph.textContent = `HEX COLOR of Background: ${firstRandom}`;
-            for (let i =0; i < textParagraphs.length; i++) {
-                textParagraphs[i].style.color = "white";
-            }         
+            document.querySelector('body').style.color = "white";     
           if (--i) myLoop(i);   //  decrement i and call myLoop again if i > 0
         }, inputDelay.value)
       })(inputRepetitions.value);;
