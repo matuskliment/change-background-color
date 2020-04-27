@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>This Page Belongs to Matus</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <!-- Bootstrap CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <link rel="stylesheet" href="style.css">
+    </header>
+    <body>
+        <div id="topDiv" class="container text-center mt-5 topDiv">
+            <h1 class="pb-5">This Page Helps You to Change the Background Color</h1>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-4 col-md-6 col-12">
+                <label for="inputDelay">Set Delay in Miliseconds</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Input</span>
+                    </div>
+                    <input id ="inputDelay" type="text" class="form-control" placeholder ="Delay in Miliseconds" aria-label="Delay in ms" aria-describedby="inputGroup-sizing-default" required>
+                </div>       
+              </div>
+              <div class="col col-lg-4 col-md-6 col-12">
+                <label for="inputDelay">Set Number of Repetitions</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Input</span>
+                    </div>
+                    <input id ="inputRepetitions" type="text" class="form-control" placeholder ="Number of Repetitions" aria-label="# of Repetitions" aria-describedby="inputGroup-sizing-default">
+                    <div class="invalid-feedback">
+                        Testing validation message
+                    </div>
+                </div>       
+              </div>
+            </div>
+          </div>   
+
+        <div id="bigTopMargin" class="containter text-center topDiv">
+            <p class="pt-1">Click on the bellow button to change background and button colors.</p>
+            <button id="changeColorDiv" type="button" class="btn btn-primary btn-lg d-block mx-auto">Click to Change Background</button>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script src="script.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    </body>
+</html>
+
