@@ -9,7 +9,7 @@ newParagraph.className = "text-center mb-4 text-white";
 div.insertBefore(newParagraph, div.firstElementChild);
 newParagraph.textContent = "HEX COLOR of Background:";
 inputDelay.value = 200;
-inputRepetitions.value = 10;
+inputRepetitions.value = 1;
 
 function random256() {
     return Math.floor(Math.random() * 256);
