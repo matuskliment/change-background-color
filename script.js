@@ -7,7 +7,7 @@ const inputDelay = document.getElementById("inputDelay");
 const inputRepetitions = document.getElementById("inputRepetitions");
 newParagraph.className = "text-center mb-4 text-white";
 div.insertBefore(newParagraph, div.firstElementChild);
-newParagraph.textContent = "HEX COLOR of Background:";
+// newParagraph.textContent = "HEX COLOR of Background:";
 inputDelay.value = 200;
 inputRepetitions.value = 1;
 
@@ -45,7 +45,7 @@ buttonChangeColor.addEventListener('click', (e) => {
         setTimeout(function() {
             let firstRandom = randomRGBToHex(random256(), random256(), random256());
             buttonChangeColor.style.backgroundColor = firstRandom;
-            newParagraph.textContent = `HEX COLOR of Background: ${firstRandom}`;
+            // newParagraph.textContent = `HEX COLOR of Background: ${firstRandom}`;
             document.querySelector('body').style.color = "white";     
           if (--i) myLoop(i);   //  decrement i and call myLoop again if i > 0
         }, inputDelay.value)
